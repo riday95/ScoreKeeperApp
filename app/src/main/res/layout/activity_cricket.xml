@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.scorekeeperapp.cricket">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Grey"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CustomTeamTextView"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/teamA"
+                android:textColor="@color/DarkGrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CustomCricketTextView"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/runTextPadding"
+                    android:text="@string/run"
+                    android:textColor="@color/DarkGrey" />
+
+                <TextView
+                    android:id="@+id/team_a_runs"
+                    style="@style/CustomScoreTextView"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/scoreSetTextView"
+                    android:textColor="@color/Black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CustomCricketTextView"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/wicketTextPadding"
+                    android:text="@string/wicket"
+                    android:textColor="@color/DarkGrey" />
+
+                <TextView
+                    android:id="@+id/team_a_wicket"
+                    style="@style/CustomScoreTextView"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/scoreSetTextView"
+                    android:textColor="@color/Black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/CustomCricketButton"
+                    android:onClick="addOneA"
+                    android:text="@string/oneCricket" />
+
+                <Button
+                    style="@style/CustomCricketButton"
+                    android:onClick="addFourA"
+                    android:text="@string/fourCricket" />
+
+                <Button
+                    style="@style/CustomCricketButton"
+                    android:onClick="addSixA"
+                    android:text="@string/sixCricket" />
+            </LinearLayout>
+
+            <Button
+                style="@style/CustomCricketOutButton"
+                android:onClick="teamAOut"
+                android:text="@string/outCricket" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Teal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CustomTeamTextView"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/teamB"
+                android:textColor="@color/DarkGrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CustomCricketTextView"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/runTextPadding"
+                    android:text="@string/run"
+                    android:textColor="@color/DarkGrey" />
+
+                <TextView
+                    android:id="@+id/team_b_runs"
+                    style="@style/CustomScoreTextView"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/scoreSetTextView"
+                    android:textColor="@color/Black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CustomCricketTextView"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/wicketTextPadding"
+                    android:text="@string/wicket"
+                    android:textColor="@color/DarkGrey" />
+
+                <TextView
+                    android:id="@+id/team_b_wicket"
+                    style="@style/CustomScoreTextView"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/scoreSetTextView"
+                    android:textColor="@color/Black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/CustomCricketButton"
+                    android:onClick="addOneB"
+                    android:text="@string/oneCricket" />
+
+                <Button
+                    style="@style/CustomCricketButton"
+                    android:onClick="addFourB"
+                    android:text="@string/fourCricket" />
+
+                <Button
+                    style="@style/CustomCricketButton"
+                    android:onClick="addSixB"
+                    android:text="@string/sixCricket" />
+            </LinearLayout>
+
+            <Button
+                style="@style/CustomCricketOutButton"
+                android:onClick="teamBOut"
+                android:text="@string/outCricket" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mainLogoHeight"
+        android:src="@drawable/cricket" />
+
+    <TextView
+        android:id="@+id/result_of_team"
+        style="@style/CustomResultTextView"
+        android:layout_marginBottom="@dimen/resultTextMargin"
+        android:text=""
+        android:textColor="@color/Black"
+        android:textSize="@dimen/resultTextSizeCricket" />
+
+    <TextView
+        android:id="@+id/wicket_of_team"
+        style="@style/CustomResultTextView"
+        android:layout_marginBottom="@dimen/resultTextMarginWicket"
+        android:text=""
+        android:textColor="@color/Black" />
+
+
+    <Button
+        style="@style/CustomButtonResult"
+        android:onClick="resultOfBothTeam"
+        android:text="@string/result" />
+
+    <Button
+        style="@style/CustomButtonReset"
+        android:onClick="resetForBothTeam"
+        android:text="@string/reset" />
+</RelativeLayout>

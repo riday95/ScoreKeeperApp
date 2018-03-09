@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--Main Activity-->
+    <dimen name="mainLogoHeight">58dp</dimen>
+    <dimen name="mainTitleSize">18sp</dimen>
+    <dimen name="mainTitleBottom">48dp</dimen>
+    <dimen name="mainTitleTop">14dp</dimen>
+    <dimen name="resultTextMargin">150dp</dimen>
+
+    <!--Football Activity-->
+    <dimen name="resultTextSizeFootball">24sp</dimen>
+    <dimen name="resultTextSizeFootball2">14sp</dimen>
+    <dimen name="resultTextMarginFoul">130dp</dimen>
+    <!--Basketball Activity-->
+    <dimen name="resultTextSizeBasket">18sp</dimen>
+    <!--Cricket Activity-->
+    <dimen name="resultTextSizeCricket">24sp</dimen>
+    <dimen name="resultTextMarginWicket">130dp</dimen>
+    <dimen name="runTextPadding">36dp</dimen>
+    <dimen name="wicketTextPadding">34dp</dimen>
+
+</resources>

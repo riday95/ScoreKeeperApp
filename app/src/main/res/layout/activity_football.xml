@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.scorekeeperapp.football">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/LightBrown"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CustomTeamTextView"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/teamA"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/CustomScoreTextView"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/scoreSetTextView"
+                android:textColor="@color/Black" />
+
+            <Button
+                style="@style/CustomButtonActTop"
+                android:onClick="goalTeamA"
+                android:text="@string/goal" />
+
+            <Button
+                style="@style/CustomButtonActMid"
+                android:onClick="goalTeamA"
+                android:text="@string/penalty" />
+
+            <Button
+                style="@style/CustomButtonActBelow"
+                android:onClick="foulTeamA"
+                android:text="@string/foul" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Pink"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CustomTeamTextView"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/teamB"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/CustomScoreTextView"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/scoreSetTextView"
+                android:textColor="@color/Black" />
+
+            <Button
+                style="@style/CustomButtonActTop"
+                android:onClick="goalTeamB"
+                android:text="@string/goal" />
+
+            <Button
+                style="@style/CustomButtonActMid"
+                android:onClick="goalTeamB"
+                android:text="@string/penalty" />
+
+            <Button
+                style="@style/CustomButtonActBelow"
+                android:onClick="foulTeamB"
+                android:text="@string/foul" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mainLogoHeight"
+        android:src="@drawable/football" />
+
+    <TextView
+        android:id="@+id/result_of_team"
+        style="@style/CustomResultTextView"
+        android:layout_marginBottom="@dimen/resultTextMargin"
+        android:text=""
+        android:textColor="@color/Black"
+        android:textSize="@dimen/resultTextSizeFootball" />
+
+    <TextView
+        android:id="@+id/foul_of_team"
+        style="@style/CustomResultTextView"
+        android:layout_marginBottom="@dimen/resultTextMarginFoul"
+        android:text=""
+        android:textColor="@color/Black" />
+
+    <Button
+        style="@style/CustomButtonResult"
+        android:onClick="resultOfBothTeam"
+        android:text="@string/result" />
+
+    <Button
+        style="@style/CustomButtonReset"
+        android:onClick="resetForBothTeam"
+        android:text="@string/reset" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Score Keeper App</string>
+
+    <!--Main Activity-->
+    <string name="titleMain">Choose a sport</string>
+    <string name="football">Football</string>
+    <string name="basketball">Basketball</string>
+    <string name="cricket">Cricket</string>
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name="scoreSetTextView">0</string>
+    <string name="reset">Reset</string>
+    <string name="result">Result</string>
+
+    <!--Football Activity-->
+    <string name="goal">Goal</string>
+    <string name="penalty">Penalty</string>
+    <string name="foul">Foul</string>
+    <!--Basketball Activity-->
+    <string name="trePoints">+3 Points</string>
+    <string name="twoPoints">+2 Points</string>
+    <string name="freeThrow">Free Throw</string>
+    <!--Cricket Activity-->
+    <string name="oneCricket">1</string>
+    <string name="fourCricket">4</string>
+    <string name="sixCricket">6</string>
+    <string name="outCricket">Out</string>
+    <string name="run">R</string>
+    <string name="wicket">W</string>
+
+</resources>

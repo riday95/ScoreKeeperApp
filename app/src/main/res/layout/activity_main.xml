@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8E6C9"
+    tools:context="com.example.android.scorekeeperapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/mainTitleBottom"
+            android:layout_marginTop="@dimen/mainTitleTop"
+            android:text="@string/titleMain"
+            android:textAllCaps="true"
+            android:textSize="@dimen/mainTitleSize" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mainLogoHeight"
+            android:src="@drawable/football" />
+
+        <Button
+            android:id="@+id/football_button"
+            style="@style/CustomButtonMain"
+            android:onClick="startFootball"
+            android:text="@string/football" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mainLogoHeight"
+            android:src="@drawable/basketball" />
+
+        <Button
+            android:id="@+id/basketball_button"
+            style="@style/CustomButtonMain"
+            android:onClick="startBasketball"
+            android:text="@string/basketball" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mainLogoHeight"
+            android:src="@drawable/cricket" />
+
+        <Button
+            android:id="@+id/cricket_button"
+            style="@style/CustomButtonMain"
+            android:onClick="startCricket"
+            android:text="@string/cricket" />
+
+    </LinearLayout>
+</ScrollView>

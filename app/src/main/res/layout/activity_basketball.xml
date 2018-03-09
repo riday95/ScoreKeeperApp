@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.scorekeeperapp.basketball">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Red"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CustomTeamTextView"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/White"
+                android:text="@string/teamA" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/CustomScoreTextView"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White"
+                android:text="@string/scoreSetTextView" />
+
+            <Button
+                style="@style/CustomButtonActTop"
+                android:onClick="addThreeA"
+                android:text="@string/trePoints" />
+
+            <Button
+                style="@style/CustomButtonActMid"
+                android:onClick="addTwoA"
+                android:text="@string/twoPoints" />
+
+            <Button
+                style="@style/CustomButtonActBelow"
+                android:onClick="addFreeThrowA"
+                android:text="@string/freeThrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Black"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CustomTeamTextView"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/White"
+                android:text="@string/teamB" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/CustomScoreTextView"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White"
+                android:text="@string/scoreSetTextView" />
+
+            <Button
+                style="@style/CustomButtonActTop"
+                android:onClick="addThreeB"
+                android:text="@string/trePoints" />
+
+            <Button
+                style="@style/CustomButtonActMid"
+                android:onClick="addTwoB"
+                android:text="@string/twoPoints" />
+
+            <Button
+                style="@style/CustomButtonActBelow"
+                android:onClick="addFreeThrowB"
+                android:text="@string/freeThrow" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mainLogoHeight"
+        android:src="@drawable/basketball" />
+
+    <TextView
+        android:id="@+id/result_of_team"
+        style="@style/CustomResultTextView"
+        android:text=""
+        android:textSize="@dimen/resultTextSizeBasket"
+        android:layout_marginBottom="@dimen/resultTextMargin"
+        android:textColor="@color/White"/>
+
+    <Button
+        style="@style/CustomButtonResult"
+        android:onClick="resultOfBothTeam"
+        android:text="@string/result" />
+
+    <Button
+        style="@style/CustomButtonReset"
+        android:onClick="resetForBothTeam"
+        android:text="@string/reset" />
+</RelativeLayout>
